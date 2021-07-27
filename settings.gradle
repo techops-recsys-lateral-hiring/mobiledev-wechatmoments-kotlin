@@ -1,3 +1,2 @@
-include ':tw-image-loader'
 include ':app'
 rootProject.name = "TheWeChatMoments"

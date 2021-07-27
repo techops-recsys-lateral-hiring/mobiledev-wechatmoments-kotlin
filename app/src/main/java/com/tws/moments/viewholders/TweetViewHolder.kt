@@ -7,9 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.tws.moments.TWApplication
 import com.tws.moments.adapters.CommentsAdapter
 import com.tws.moments.adapters.ImagesAdapter
-import com.tws.moments.api.entry.CommentsBean
 import com.tws.moments.api.entry.ImagesBean
-import com.tws.moments.api.entry.SenderBean
 import com.tws.moments.api.entry.TweetBean
 import com.tws.moments.databinding.LayoutBaseTweetBinding
 import com.tws.moments.utils.dip
@@ -30,23 +28,14 @@ class TweetViewHolder(private val binding: LayoutBaseTweetBinding) :
     private lateinit var commentsAdapter: CommentsAdapter
     private var imageLoader = TWApplication.imageLoader
     fun bind(tweet: TweetBean) {
-        renderSender(tweet.sender)
         renderTextContent(tweet.content)
-        renderComments(tweet.comments)
-        renderImages(tweet.images)
-    }
-
-    private fun renderSender(senderBean: SenderBean?) {
-        senderBean?.let {
-            imageLoader.displayImage(it.avatar, binding.ivSenderAvatar)
-            binding.tvSenderNickname.text = it.nick
-        }
     }
 
     private fun renderTextContent(content: String?) {
         binding.tvTweetContent.text = content
     }
 
+    /*TODO: Do we need this ?*/
     private fun renderImages(imagesBean: List<ImagesBean>?) {
         if (imagesBean == null || imagesBean.isEmpty()) {
             binding.simpleImageView.visibility = View.GONE
@@ -74,10 +63,6 @@ class TweetViewHolder(private val binding: LayoutBaseTweetBinding) :
             imagesAdapter.images =
                 imagesBean.asSequence().map { it.url ?: "" }.filter { it.isNotEmpty() }.toList()
         }
-    }
-
-    private fun renderComments(commentsBean: List<CommentsBean>?) {
-        commentsAdapter.comments = commentsBean
     }
 
     private fun setupCommentsView(commentsView: RecyclerView) {
