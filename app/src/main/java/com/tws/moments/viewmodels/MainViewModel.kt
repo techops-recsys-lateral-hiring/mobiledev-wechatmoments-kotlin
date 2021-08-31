@@ -50,7 +50,7 @@ class MainViewModel(private val repository: MomentRepository) : ViewModel() {
             }
 
             allTweets = result
-            Log.i(TAG, "server data count:${result?.size},tweets count:${allTweets?.size}")
+
             if ((allTweets?.size ?: 0) > PAGE_TWEET_COUNT) {
                 tweets.value = allTweets?.subList(0, PAGE_TWEET_COUNT)
             } else {

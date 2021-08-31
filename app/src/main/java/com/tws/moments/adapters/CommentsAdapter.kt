@@ -4,11 +4,9 @@ import android.text.method.LinkMovementMethod
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.tws.moments.R
 import com.tws.moments.api.entry.CommentsBean
-import com.tws.moments.utils.clickableSpan
 import com.tws.moments.utils.inflate
 
 class CommentsAdapter : RecyclerView.Adapter<CommentsAdapter.CommentHolder>() {
@@ -39,11 +37,11 @@ class CommentsAdapter : RecyclerView.Adapter<CommentsAdapter.CommentHolder>() {
         }
 
         fun bind(commentsBean: CommentsBean) {
-            val spannableString = commentsBean.sender?.nick?.clickableSpan {
-                Toast.makeText(it.context, "${commentsBean.sender?.nick} info.", Toast.LENGTH_SHORT).show()
-            }
-            commentTV.text = spannableString
-            commentTV.append(":" + (commentsBean.content ?: ""))
+//            val spannableString = commentsBean.sender?.nick?.clickableSpan {
+//                Toast.makeText(it.context, "${commentsBean.sender?.nick} info.", Toast.LENGTH_SHORT).show()
+//            }
+//            commentTV.text = spannableString
+//            commentTV.append(":" + (commentsBean.content ?: ""))
         }
     }
 }
