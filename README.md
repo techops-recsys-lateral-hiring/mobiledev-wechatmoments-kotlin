@@ -1,6 +1,5 @@
 ### Setup the project
 1. Locate the current directory in terminal
-2. Execute `pod install`
 3. Execute `npm install -g mountebank`
 4. Execute `mb --configfile imposters.ejs`
 5. Open `build.gradle` in the current directory

@@ -35,7 +35,6 @@ class TweetViewHolder(private val binding: LayoutBaseTweetBinding) :
         binding.tvTweetContent.text = content
     }
 
-    /*TODO: Do we need this ?*/
     private fun renderImages(imagesBean: List<ImagesBean>?) {
         if (imagesBean == null || imagesBean.isEmpty()) {
             binding.simpleImageView.visibility = View.GONE
