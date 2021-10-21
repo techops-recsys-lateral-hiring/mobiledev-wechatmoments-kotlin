@@ -1,3 +1,6 @@
+### Requirements
+1. npm - via [Node.js installer](https://nodejs.org/en/download/) or [nvm](https://github.com/nvm-sh/nvm#install--update-script)
+
 ### Setup the project
 1. Locate the current directory in terminal
 3. Execute `npm install -g mountebank`
