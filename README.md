@@ -1,4 +1,5 @@
 ### Requirements
+> :warning: **If you are using Android Studio 4**, please clone the code at [main branch](https://github.com/techops-recsys-lateral-hiring/mobiledev-wechatmoments-kotlin/tree/main)
 1. npm - via [Node.js installer](https://nodejs.org/en/download/) or [nvm](https://github.com/nvm-sh/nvm#install--update-script)
 
 ### Setup the project
