@@ -4,7 +4,7 @@ import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterF
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-private const val BASE_URL = "https://thoughtworks-ios.herokuapp.com/"
+private const val BASE_URL = "http://10.0.2.2:2727/"
 
 val reqApi by lazy {
     val retrofit = Retrofit.Builder()
