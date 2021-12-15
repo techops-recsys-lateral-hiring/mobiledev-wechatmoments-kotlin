@@ -1,5 +1,9 @@
 ### Requirements
-1. npm - via [Node.js installer](https://nodejs.org/en/download/) or [nvm](https://github.com/nvm-sh/nvm#install--update-script)
+> :warning: **If you are using Android Studio Artic Fox 2020.3.1**, please clone the code at [as_articfox branch](https://github.com/techops-recsys-lateral-hiring/mobiledev-wechatmoments-kotlin/tree/as_articfox)
+1. Android Studio 4 (4.2.2) - via [Android Developers Archive](https://developer.android.com/studio/archive)
+2. Android SDK 30 and BuildTools 29.0.2 - via [Android SDK Manager](https://developer.android.com/studio/intro/update#sdk-manager)
+3. Java JDK 8 - via [Termurin OpenJDK](https://adoptium.net/?variant=openjdk8&jvmVariant=hotspot) or [Oracle Java Downloads](https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html)
+4. npm - via [Node.js installer](https://nodejs.org/en/download/) or [nvm](https://github.com/nvm-sh/nvm#install--update-script)
 
 ### Setup the project
 1. Locate the current directory in terminal
