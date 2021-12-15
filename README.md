@@ -1,6 +1,9 @@
 ### Requirements
 > :warning: **If you are using Android Studio 4**, please clone the code at [main branch](https://github.com/techops-recsys-lateral-hiring/mobiledev-wechatmoments-kotlin/tree/main)
-1. npm - via [Node.js installer](https://nodejs.org/en/download/) or [nvm](https://github.com/nvm-sh/nvm#install--update-script)
+1. Android Studio Artic Fox (2020.3.1) - via [Android Developers](https://developer.android.com/studio)
+2. Android SDK 30 and BuildTools 30.0.3 - via [Android SDK Manager](https://developer.android.com/studio/intro/update#sdk-manager)
+3. Java JDK 11 - via [Termurin OpenJDK](https://adoptium.net/?variant=openjdk11&jvmVariant=hotspot) or [Oracle Java Downloads](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
+4. npm - via [Node.js installer](https://nodejs.org/en/download/) or [nvm](https://github.com/nvm-sh/nvm#install--update-script)
 
 ### Setup the project
 1. Locate the current directory in terminal
