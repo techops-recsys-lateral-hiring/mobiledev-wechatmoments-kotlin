@@ -1,16 +1,23 @@
 ### Requirements
-> :warning: **If you are using Android Studio Artic Fox 2020.3.1**, please clone the code at [as_articfox branch](https://github.com/techops-recsys-lateral-hiring/mobiledev-wechatmoments-kotlin/tree/as_articfox)
-1. Android Studio 4 (4.2.2) - via [Android Developers Archive](https://developer.android.com/studio/archive)
-2. Android SDK 30 and BuildTools 29.0.2 - via [Android SDK Manager](https://developer.android.com/studio/intro/update#sdk-manager)
-3. Java JDK 8 - via [Termurin OpenJDK](https://adoptium.net/?variant=openjdk8&jvmVariant=hotspot) or [Oracle Java Downloads](https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html)
+1. Android Studio Bumblebee (2021.1.1) - via [Android Developers](https://developer.android.com/studio)
+2. Android SDK 31 and BuildTools 30.0.3 - via [Android SDK Manager](https://developer.android.com/studio/intro/update#sdk-manager)
+3. Java JDK 11 - via [Azul OpenJDK](https://www.azul.com/downloads/?version=java-11-lts&package=jdk) or [Oracle Java Downloads](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
 4. npm - via [Node.js installer](https://nodejs.org/en/download/) or [nvm](https://github.com/nvm-sh/nvm#install--update-script)
+
+### Setup nvm
+1. Open terminal
+2. Execute `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
+3. Execute `nvm install 16`
+4. Execute `nvm use 16`
+5. Execute `npm install -g mountebank`
+6. Execute `npm install -g npm@8.4.1`
+7. Execute `npm audit fix`
 
 ### Setup the project
 1. Locate the current directory in terminal
-3. Execute `npm install -g mountebank`
-4. Execute `mb --configfile imposters.ejs`
-5. Open `build.gradle` in the current directory
-6. Run the project and make sure the app can start correctly(don't worry about if the features are working properly)
+2. Execute `mb --configfile imposters.ejs`
+3. Open `build.gradle` in the current directory
+4. Run the project and make sure the app can start correctly(don't worry about if the features are working properly)
 
 ### App Introduction
 

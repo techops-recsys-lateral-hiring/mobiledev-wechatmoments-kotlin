@@ -7,3 +7,5 @@ local.properties
 /captures
 .externalNativeBuild
 .cxx
+mb.log
+mb.pid
