@@ -1,23 +1,16 @@
 ### Requirements
-1. Android Studio Bumblebee (2021.1.1) - via [Android Developers](https://developer.android.com/studio)
-2. Android SDK 31 and BuildTools 30.0.3 - via [Android SDK Manager](https://developer.android.com/studio/intro/update#sdk-manager)
-3. Java JDK 11 - via [Azul OpenJDK](https://www.azul.com/downloads/?version=java-11-lts&package=jdk) or [Oracle Java Downloads](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
-4. npm - via [Node.js installer](https://nodejs.org/en/download/) or [nvm](https://github.com/nvm-sh/nvm#install--update-script)
+1. [Android Studio Latest Stable](https://developer.android.com/studio)
+2. [SDK 33 and BuildTools 32.0.2](https://developer.android.com/studio/intro/update#sdk-manager)
+3. [JDK 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html)
+4. [Node.js installer](https://nodejs.org/en/download/) 
+5. [nvm](https://github.com/nvm-sh/nvm#install--update-script)
 
-### Setup nvm
-1. Open terminal
-2. Execute `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
-3. Execute `nvm install 16`
-4. Execute `nvm use 16`
-5. Execute `npm install -g mountebank`
-6. Execute `npm install -g npm@8.4.1`
-7. Execute `npm audit fix`
+### Setup 
+```shell
+./test_server.sh
+```
 
-### Setup the project
-1. Locate the current directory in terminal
-2. Execute `mb --configfile imposters.ejs`
-3. Open `build.gradle` in the current directory
-4. Run the project and make sure the app can start correctly(don't worry about if the features are working properly)
+Run the project and make sure the app can start correctly(don't worry about if the features are working properly)
 
 ### App Introduction
 
